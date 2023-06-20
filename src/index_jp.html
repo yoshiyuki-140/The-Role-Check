@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            text-align: center;
+        }
+
+        h1 {
+            padding: 0.5em;
+            background: aliceblue;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+
+        }
+
+        .output {
+            padding: 0.5em;
+            background: aliceblue;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>役割確認</h1>
+    <form>
+        <div>
+            <label for="labelWeek">週:</label>
+            <input type="text" id="week"><br><br>
+            <input type="button" onclick="showRole()" value="Show me">
+        </div>
+        <div>
+            <br><br>
+            <label for="leader" class="output">リーダー:</label>
+            <span id="printLeader" class="output"></span><br><br>
+            <label for="secretary" class="output">書記:</label>
+            <span id="printSecretary" class="output"></span><br><br>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
