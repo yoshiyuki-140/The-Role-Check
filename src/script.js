@@ -5,7 +5,7 @@
 const controleRoles = new class {
     constructor() {
         this.NumberOfWeeks = 15;
-        this.members = ['Arimoto', 'Kurose', 'Inoue', 'Isi'];
+        this.members = ['Arimoto', 'Kurose', 'Inoue', 'Ishii'];
         // this.members_jp = ['有本', '黒瀬', '井上', '石井'];
         this.roleDatas = [];
         this.createRoleData();
@@ -58,8 +58,9 @@ var forInit = new class {
             var someOption = document.createElement("option");
             someOption.value = i;
             someOption.innerText = i;
+            someOption.style.fontSize = "30px";
+            // document.createElement("option").style.fontSize = "";
             selector.appendChild(someOption);
         }
     }
 }
-

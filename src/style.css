@@ -9,6 +9,12 @@ h1 {
 
 }
 
+#week,#labelWeek{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
 #SubmitButton {
     display: flex;
     justify-content: center;

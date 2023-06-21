@@ -3,18 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body onload="forInit.init()">
     <h1>役割確認</h1>
     <form>
-        <div>
-            <label for="labelWeek">週:</label>
+        <div id="inputWeekDiv">
+            <label for="labelWeek">第</label>
             <!--
                 <input type="text" id="week"><br><br>
             -->
             <select name="" id="week"></select>
+            <label for="labelWeek">週</label>
+        </div>
+        <div>
             <input type="button" onclick="showRole()" value="Show me" id="SubmitButton">
         </div>
         <div>
