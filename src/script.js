@@ -30,6 +30,7 @@ function showRole() {
 
     if (!(3 <= rawWeek && rawWeek <= 17)) {
         // 3週~17週までしかカバーしてないですよ~って意味
+        // ^ select tag 使うから必要ないかもね
         alert("The week element must be more than 3 and less than 17");
         return false;
     }
@@ -37,3 +38,28 @@ function showRole() {
     document.getElementById("printLeader").innerHTML = controleRoles.roleDatas[idx].leader;
     document.getElementById("printSecretary").innerHTML = controleRoles.roleDatas[idx].secretary;
 }
+
+
+
+// for window init
+var forInit = new class {
+    // If you want to init window, you can just do
+    // ```js
+    // forInit.init();
+    /// ```
+    init(){
+        this.createSectorOfWeeks();
+    }
+
+
+    createSectorOfWeeks() {
+        var selector = document.getElementById("week")
+        for (var i = 3; i < controleRoles.NumberOfWeeks + 3; i++) {
+            var someOption = document.createElement("option");
+            someOption.value = i;
+            someOption.innerText = i;
+            selector.appendChild(someOption);
+        }
+    }
+}
+

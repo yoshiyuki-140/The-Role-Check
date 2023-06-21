@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="forInit.init()">
     <h1>役割確認</h1>
     <form>
         <div>
             <label for="labelWeek">週:</label>
-            <input type="text" id="week"><br><br>
+            <!--
+                <input type="text" id="week"><br><br>
+            -->
+            <select name="" id="week"></select>
             <input type="button" onclick="showRole()" value="Show me" id="SubmitButton">
         </div>
         <div>
