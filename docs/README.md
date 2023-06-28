@@ -1,4 +1,4 @@
-# The Role Checker
+# The Role Check
 
 ## 存在意義
 
